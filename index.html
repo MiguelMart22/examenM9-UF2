@@ -15,8 +15,18 @@
     </div>
     <h2>Exercici 2</h2>
     <div id="ex2">
-        <img src="originals/pallasso.svg" width="450px">
+        <img src="originals/pallasso.svg" width="450px" onclick="reproduirMusica()">
         <a href="https://www.videvo.net/es/efecto-de-sonido/crowd100-short-med-blc-a023902/240637/#rs=audio-download">Risas</a>
+        <audio id="audio" controls style="display: none;">
+            <source type="audio/wav" src="audio/risas.wav">
+        </audio>
     </div>
 </body>
 </html>
+
+<script>
+function reproduirMusica() {
+    var audio = document.getElementById("audio");
+    audio.play();
+}
+</script>
